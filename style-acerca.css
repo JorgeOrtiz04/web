@@ -1,0 +1,504 @@
+/* Reset básico para quitar márgenes y padding por defecto */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-user-select: none; /* Safari */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* Internet Explorer */
+}
+
+body {
+    font-family: 'Varela Round', sans-serif;
+    user-select: none; /* Para navegadores modernos */
+
+}
+/* Estilos para el botón de WhatsApp */
+.whatsapp-button {
+    position: fixed;
+    bottom: 20px; /* Espaciado desde el fondo */
+    right: 20px; /* Espaciado desde la derecha */
+    background-color: #25D366; /* Color verde de WhatsApp */
+    color: white; /* Color del icono */
+    border-radius: 50%; /* Hace que sea completamente redondo */
+    width: 60px; /* Ancho del botón */
+    height: 60px; /* Altura del botón, igual al ancho para ser un círculo */
+    display: flex;
+    justify-content: center; /* Centra el icono horizontalmente */
+    align-items: center; /* Centra el icono verticalmente */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    font-size: 24px;
+    text-align: center;
+    z-index: 1000; /* Asegúrate de que esté por encima de otros elementos */
+    transition: background-color 0.3s;
+    text-decoration: none; /* Quita el subrayado */
+}
+
+.whatsapp-button:hover {
+    background-color: #128C7E; /* Color más oscuro al pasar el ratón */
+}
+
+/* Estilos responsivos */
+@media (max-width: 768px) {
+    .whatsapp-button {
+        width: 50px; /* Tamaño más pequeño en pantallas pequeñas */
+        height: 50px;
+        font-size: 20px; /* Tamaño de icono más pequeño */
+    }
+}
+
+@media (max-width: 480px) {
+    .whatsapp-button {
+        width: 40px; /* Tamaño más pequeño en pantallas muy pequeñas */
+        height: 40px;
+        font-size: 18px; /* Tamaño de icono más pequeño */
+    }
+}
+/* Estilos para el botón de WhatsApp */
+.whatsapp-button {
+    position: fixed;
+    bottom: 20px; /* Espaciado desde el fondo */
+    right: 20px; /* Espaciado desde la derecha */
+    background-color: #25D366; /* Color verde de WhatsApp */
+    color: white; /* Color del icono */
+    border-radius: 50%; /* Hace que sea completamente redondo */
+    width: 60px; /* Ancho del botón */
+    height: 60px; /* Altura del botón, igual al ancho para ser un círculo */
+    display: flex;
+    justify-content: center; /* Centra el icono horizontalmente */
+    align-items: center; /* Centra el icono verticalmente */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    font-size: 24px;
+    text-align: center;
+    z-index: 1000; /* Asegúrate de que esté por encima de otros elementos */
+    transition: background-color 0.3s;
+    text-decoration: none; /* Quita el subrayado */
+}
+
+.whatsapp-button:hover {
+    background-color: #128C7E; /* Color más oscuro al pasar el ratón */
+}
+
+/* Estilos responsivos */
+@media (max-width: 768px) {
+    .whatsapp-button {
+        width: 50px; /* Tamaño más pequeño en pantallas pequeñas */
+        height: 50px;
+        font-size: 20px; /* Tamaño de icono más pequeño */
+    }
+}
+
+@media (max-width: 480px) {
+    .whatsapp-button {
+        width: 40px; /* Tamaño más pequeño en pantallas muy pequeñas */
+        height: 40px;
+        font-size: 18px; /* Tamaño de icono más pequeño */
+    }
+}
+
+/* Estilos para el botón de Instagram */
+.instagram-button {
+    position: fixed;
+    bottom: 90px; /* Espaciado desde el fondo para que esté encima del botón de WhatsApp */
+    right: 20px; /* Espaciado desde la derecha */
+    background-color: #E1306C; /* Color de Instagram */
+    color: white; /* Color del icono */
+    border-radius: 50%; /* Hace que sea completamente redondo */
+    width: 60px; /* Ancho del botón */
+    height: 60px; /* Altura del botón */
+    display: flex;
+    justify-content: center; /* Centra el icono horizontalmente */
+    align-items: center; /* Centra el icono verticalmente */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    font-size: 24px;
+    text-align: center;
+    z-index: 1000; /* Asegúrate de que esté por encima de otros elementos */
+    transition: background-color 0.3s;
+    text-decoration: none; /* Quita el subrayado */
+}
+
+.instagram-button:hover {
+    background-color: #C13584; /* Color más oscuro al pasar el ratón */
+}
+
+/* Estilos responsivos */
+@media (max-width: 768px) {
+    .instagram-button {
+        width: 50px; /* Tamaño más pequeño en pantallas pequeñas */
+        height: 50px;
+        font-size: 20px; /* Tamaño de icono más pequeño */
+    }
+}
+
+@media (max-width: 480px) {
+    .instagram-button {
+        width: 40px; /* Tamaño más pequeño en pantallas muy pequeñas */
+        height: 40px;
+        font-size: 18px; /* Tamaño de icono más pequeño */
+    }
+}
+
+
+
+/* Estilos para la barra de navegación */
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.9); /* Fondo blanco semi-transparente */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);  /* Sombra ligera */
+    z-index: 1000;
+    transition: background-color 0.3s ease;     /* Transición suave */
+}
+
+.navbar.scrolled {
+    background-color: rgba(255, 255, 255, 1);  /* Fondo blanco completo al hacer scroll */
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.logo img {
+    height: 50px;                              /* Tamaño del logo */
+    transition: transform 0.3s ease;
+}
+
+.logo img:hover {
+    transform: scale(1.1);                     /* Efecto hover de agrandar logo */
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links li {
+    position: relative;
+}
+
+.nav-links a {
+    text-decoration: none;
+    font-size: 1.1em;
+    color: #333;
+    font-family: 'Varela Round', sans-serif;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #ff6b6b;                            /* Efecto hover en los enlaces */
+}
+
+.nav-links a::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 3px;
+    background-color: #ff6b6b;
+    transition: width 0.3s;
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+}
+
+.nav-links a:hover::after {
+    width: 100%;                               /* Subrayado de color con hover */
+}
+
+/* Para pantallas pequeñas */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    .nav-links {
+        flex-direction: column;
+        width: 100%;
+        gap: 15px;
+    }
+    
+    .nav-links a {
+        font-size: 1.2em;
+    }
+}
+
+/*-------------------------------------------------------*/
+/* Estilos para la sección de portada */
+.portada {
+    height: 100vh;
+    background: url('img/acerca de.jpg') no-repeat center center/cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    padding: 0 20px;
+    position: relative;
+}
+
+.portada::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6); /* Capa de oscurecimiento */
+    z-index: 1;
+}
+
+.portada h1 {
+    font-size: 4em;
+    z-index: 2;
+    font-family: 'Varela Round', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    margin-bottom: 20px;
+}
+
+.portada p {
+    font-size: 1.3em;
+    z-index: 2;
+    font-family: 'Varela Round', sans-serif;
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.6;
+    color: #f0f0f0;
+}
+
+/* Para pantallas pequeñas */
+@media (max-width: 768px) {
+    .portada h1 {
+        font-size: 2.5em;
+    }
+
+    .portada p {
+        font-size: 1.1em;
+    }
+}
+
+
+.sobre-mi {
+    padding: 50px 20px;
+    background-color: #f5f5f5; /* Color de fondo similar al resto */
+    text-align: center;
+}
+
+.sobre-mi h2 {
+    font-size: 2.5em;
+    color: #333;
+    margin-bottom: 30px;
+    font-family: 'Varela Round', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.sobre-mi p {
+    font-size: 1.2em;
+    color: #666;
+    line-height: 1.6;
+    max-width: 800px;
+    margin: 0 auto 20px;
+    font-family: 'Varela Round', sans-serif;
+}
+
+
+.linea-tiempo-creativa {
+    padding: 50px 20px;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+.linea-tiempo-creativa h2 {
+    font-size: 2.5em;
+    color: #333;
+    margin-bottom: 30px;
+    font-family: 'Varela Round', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.timeline-creativa {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.timeline-item {
+    position: relative;
+    width: 80%;
+    margin: 20px 0;
+}
+
+.timeline-icon {
+    position: absolute;
+    left: -25px;
+    top: 15px;
+    background-color: #ff6b6b;
+    color: #fff;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.timeline-content {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: left;
+    margin-left: 70px; /* Espacio para el icono */
+}
+
+.timeline-content h3 {
+    margin: 0 0 10px;
+    color: #ff6b6b;
+    font-family: 'Varela Round', sans-serif;
+}
+
+.timeline-content p {
+    color: #666;
+    font-family: 'Varela Round', sans-serif;
+}
+
+/* Ajustes responsivos */
+@media (max-width: 768px) {
+    .timeline-item {
+        width: 90%; /* Ampliar en pantallas pequeñas */
+    }
+}
+
+.mi-equipo {
+    padding: 40px 20px;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+.mi-equipo h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.equipo-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.miembro {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    width: 240px; /* Ajusta según tu preferencia */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.miembro:hover {
+    transform: scale(1.05);
+}
+
+.miembro img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.miembro h3 {
+    margin: 10px 0 5px;
+    font-size: 1.5em;
+}
+
+.miembro .profesion {
+    color: #555;
+    font-style: italic;
+}
+
+.miembro p {
+    padding: 0 10px 15px;
+    font-size: 0.9em;
+    color: #333;
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+    .miembro {
+        width: calc(50% - 20px); /* Dos miembros por fila */
+    }
+}
+
+@media (max-width: 480px) {
+    .miembro {
+        width: 100%; /* Un miembro por fila */
+    }
+}
+
+
+
+
+
+.footer {
+    background-color: #333;
+    color: #fff;
+    padding: 40px 20px;
+}
+
+.footer .container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.footer-column {
+    flex: 1;
+    min-width: 200px;
+    margin: 10px;
+}
+
+.footer-column h3 {
+    color: #ff6b6b;
+    font-family: 'Varela Round', sans-serif;
+    margin-bottom: 15px;
+}
+
+.footer-column p {
+    margin: 5px 0;
+    color: #ccc;
+}
+
+.social-icons {
+    display: flex;
+    gap: 15px;
+}
+
+.social-icons a {
+    color: #fff;
+    transition: color 0.3s;
+}
+
+.social-icons a:hover {
+    color: #ff6b6b;
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 0.9em;
+    color: #ccc;
+}
+

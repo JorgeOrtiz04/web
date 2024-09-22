@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <link rel="icon" href="img/logo.png" type="image/x-icon">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VIDUARTE</title>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+<!-- Barra de Navegación -->
+<nav class="navbar">
+    <div class="container">
+        <a href="index.html" class="logo">
+            <img src="img/logo.png" alt="Logo">
+        </a>
+        <ul class="nav-links">
+            <li><a href="index.html" id="inicio">Inicio</a></li>
+            <li><a href="acerca.html" id="acerca-de">Acerca de</a></li>
+            <li><a href="cursos.html" id="contactanos">Cursos</a></li>
+            <li><a href="contacto.html" id="contactanos">Contáctanos</a></li>
+        </ul>
+    </div>
+</nav>
+
+<section class="portada">
+    <h1>Bienvenido a Nuestro Sitio</h1>
+    <p>Descubre una experiencia única con nuestros servicios personalizados y soluciones innovadoras diseñadas para satisfacer todas tus necesidades.</p>
+</section>
+
+<section class="exhibicion">
+    <h2>¿POR QUÉ ESCOGERNOS?</h2>
+    <div class="caracteristicas">
+        <div class="caracteristica">
+            <h3>Característica 1<i class="fa-solid fa-user"></i></h3>
+            <p>Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto.</p>
+        </div>
+        <div class="caracteristica">
+            <h3>Característica 2<i class="fa-solid fa-heart"></i></h3>
+            <p>Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto.</p>
+        </div>
+        <div class="caracteristica">
+            <h3>Característica 3<i class="fa-solid fa-comments"></i></h3>
+            <p>Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto.</p>
+        </div>
+        <div class="caracteristica">
+            <h3>Característica 4<i class="fas fa-check-circle"></i></h3>
+            <p>Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto.</p>
+        </div>
+    </div>
+</section>
+<section class="datos">
+    <div class="container">
+        <div class="dato">
+            <h3 class="numero" data-valor="150">0</h3>
+            <p class="titulo">Proyectos Completados</p>
+        </div>
+        <div class="dato">
+            <h3 class="numero" data-valor="120">0</h3>
+            <p class="titulo">Clientes Satisfechos</p>
+        </div>
+        <div class="dato">
+            <h3 class="numero" data-valor="5">0</h3>
+            <p class="titulo">Años de Experiencia</p>
+        </div>
+        <div class="dato">
+            <h3 class="numero" data-valor="10">0</h3>
+            <p class="titulo">Premios Ganados</p>
+        </div>
+    </div>
+</section>
+
+
+<!-- Nueva sección de testimonios -->
+<section class="testimonios">
+    <h2>Lo que dicen nuestros clientes</h2>
+    <div class="testimonio-container">
+        <div class="testimonio active">
+            <p>"El servicio fue excepcional. Me ayudaron en todo momento."</p>
+            <h3>- Juan Pérez</h3>
+        </div>
+        <div class="testimonio">
+            <p>"Una experiencia increíble. ¡Altamente recomendados!"</p>
+            <h3>- Ana Gómez</h3>
+        </div>
+        <div class="testimonio">
+            <p>"Superaron mis expectativas. ¡Definitivamente volveré!"</p>
+            <h3>- Luis Rodríguez</h3>
+        </div>
+        <div class="testimonio">
+            <p>"Un gran equipo de profesionales. Estoy muy satisfecho."</p>
+            <h3>- Marta Fernández</h3>
+        </div>
+    </div>
+    <button class="prev" onclick="changeSlide(-1)">❮</button>
+    <button class="next" onclick="changeSlide(1)">❯</button>
+</section>
+<a href="https://www.instagram.com/victoriaduarten?igsh=MWRwazJhOW96MmZobA%3D%3D&utm_source=qr" class="instagram-button" target="_blank">
+    <i class="fab fa-instagram"></i>
+</a>
+<a href="https://wa.me/1234567890" class="whatsapp-button" target="_blank">
+    <i class="fab fa-whatsapp"></i>
+</a>
+<script src="script.js"></script>
+</body>
+<footer class="footer">
+    <div class="container">
+        <div class="footer-column">
+            <h3>Contacto</h3>
+            <p><i class="fas fa-phone-alt"></i> Teléfono: +593 4 123 4567</p>
+            <p><i class="fas fa-envelope"></i> Correo: contacto@tusitio.com</p>
+        </div>
+        <div class="footer-column">
+            <h3>Ubicación</h3>
+            <p><i class="fas fa-map-marker-alt"></i> Ciudad: Guayaquil</p>
+            <p><i class="fas fa-globe"></i> País: Ecuador</p>
+        </div>
+        <div class="footer-column">
+            <h3>Desarrollado por</h3>
+            <p>Jorge Ortiz Duarte</p>
+        </div>
+        <div class="footer-column">
+            <h3>Redes Sociales</h3>
+            <div class="social-icons">
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>&copy; 2024 - Tu Empresa. Todos los derechos reservados.</p>
+    </div>
+</footer>
+
+</html>
